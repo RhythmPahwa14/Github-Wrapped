@@ -32,7 +32,7 @@ return (
         </div>
         <div style={{ display: 'flex', gap: 4 }}>
           {years.map(y => (
-            <button key={y} onClick={() => setYear(y)} style={{ padding: '5px 14px', borderRadius: 8, border: '1.5px solid #333', background: 'transparent', color: year === y ? '#ff6b35' : '#555', fontFamily: 'monospace', fontSize: 12, cursor: 'pointer', transition: 'all 0.2s' }}>
+            <button key={y} onClick={() => setYear(y)} style={{ padding: '5px 14px', borderRadius: 8, border: '1.5px solid #333', background: 'transparent', color: year === y ? '#ff6b35' : '#aaa', fontFamily: 'monospace', fontSize: 12, cursor: 'pointer', transition: 'all 0.2s' }}>
               {y}
             </button>
           ))}
@@ -90,7 +90,7 @@ return (
           ))}
         </div>
 
-        <div style={{ textAlign: 'center', paddingTop: 20, borderTop: '1px solid #1a1a1a', fontFamily: 'monospace', fontSize: 12, color: '#555' }}>
+        <div style={{ textAlign: 'center', paddingTop: 20, borderTop: '1px solid #1a1a1a', fontFamily: 'monospace', fontSize: 12, color: '#777' }}>
           Made with <span style={{ color: '#ff6b35' }}>❤</span> by Rhythm Pahwa & Sandeep Vashishtha
         </div>
 
