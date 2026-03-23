@@ -91,7 +91,7 @@ return (
         </div>
 
         <div style={{ textAlign: 'center', paddingTop: 20, borderTop: '1px solid #1a1a1a', fontFamily: 'monospace', fontSize: 12, color: '#555' }}>
-          Made with <span style={{ color: '#ff6b35' }}>❤</span> by Rhythm Pahwa
+          Made with <span style={{ color: '#ff6b35' }}>❤</span> by Rhythm Pahwa & Sandeep Vashishtha
         </div>
 
       </div>

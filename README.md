@@ -52,4 +52,4 @@ app/
 
 ## Author
 
-Made with love by Rhythm Pahwa
+Made with love by Rhythm Pahwa 
