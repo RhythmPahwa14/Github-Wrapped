@@ -72,8 +72,8 @@ return (
               onKeyDown={e => e.key === 'Enter' && handleGenerate()}
               style={{ flex: 1, background: 'transparent', border: 'none', outline: 'none', color: '#f0f0f0', fontFamily: 'monospace', fontSize: 15, caretColor: '#ff6b35' }}
             />
-            <button onClick={handleGenerate} style={{ background: 'linear-gradient(135deg, #ff6b35, #e85a24)', border: 'none', borderRadius: 8, padding: '7px 18px', color: 'white', fontFamily: "'Exo 2', sans-serif", fontWeight: 700, fontSize: 13, cursor: 'pointer', flexShrink: 0 }}>
-              Generate ↗
+            <button onClick={handleGenerate} style={{ background: 'transparent', border: 'none', padding: '7px 18px', color: '#f0f0f0', fontFamily: "'Exo 2', sans-serif", fontWeight: 700, fontSize: 13, cursor: 'pointer', flexShrink: 0, transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: 6 }} onMouseEnter={e => e.target.style.color = '#ff6b35'} onMouseLeave={e => e.target.style.color = '#f0f0f0'}>
+              Generate<span style={{ color: '#ff6b35', transition: 'all 0.2s' }}>↗</span>
             </button>
           </div>
         </div>
@@ -88,10 +88,6 @@ return (
               <div style={{ fontFamily: 'monospace', fontSize: 11, color: '#888' }}>{sub}</div>
             </div>
           ))}
-        </div>
-
-        <div style={{ textAlign: 'center', paddingTop: 20, borderTop: '1px solid #1a1a1a', fontFamily: 'monospace', fontSize: 12, color: '#777' }}>
-          Made with <span style={{ color: '#ff6b35' }}>❤</span> by Rhythm Pahwa & Sandeep Vashishtha
         </div>
 
       </div>
