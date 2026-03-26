@@ -121,9 +121,9 @@ export async function GET(request) {
 
     try {
       const prRes = await fetch(
-        `https://api.github.com/search/issues?q=author:${username}+type:pr+created:${year}-01-01..${year}-12-31&per_page=1`,
-        { headers }
-      )
+    `https://api.github.com/search/issues?q=author:${username}+is:pr+created:${year}-01-01..${year}-12-31&per_page=1`,
+  { headers }
+)
       if (prRes.ok) {
         const prData = await prRes.json()
         if (prData.total_count > 0) prEvents = prData.total_count
